@@ -45,17 +45,6 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="width:150px;height:150px;"><img src="https://s1.ax1x.com/2022/10/08/x8wkEq.png"></div><p>欸欸欸，你们看到ta了吗？<br>额，好像在上学呢，不在。<br>[doge]</p><h1 id="👻我？"><a href="#👻我？" class="headerlink" title="👻我？"></a>👻我？</h1><p>没错 就是我啦~<br>我只是一只小菜鸡~<br>哦不对，是个新手<psw>（学的很烂的纯新手）</psw></p><h2 id="📃基本资料"><a href="#📃基本资料" class="headerlink" title="📃基本资料"></a>📃基本资料</h2><p>🌈姓名：Potato🥔<br>🌈性别：♂<br>🌈生日：2002.08<br>🌈职业：学生👍<br>📬：the_somme@163.com | </p><h3 id="🤪技能："><a href="#🤪技能：" class="headerlink" title="🤪技能："></a>🤪技能：</h3><p>❌擅长PS、Pr、Ae、Au、Ai、Dw、An、Id等软件的安装与卸载🎃<br>❌精通Html、CSS、JavaScript、Vue、React、PHP、Java、Python、C、C++、C#、Go、TypeScript等单词的拼写🎲<br>❌熟悉Windows、Linux、Mac、Android、IOS等系统的开关机👻</p><p><br></br></p><div ><img src="https://s1.ax1x.com/2022/10/05/xlorB6.png"></div><hr></hr><p style="text-align: center;color: #CC3300;font-size:30px;"><psw>好了，再见，开摆！~</psw></p><iframe style="width:665px;height:374px;" src="//player.bilibili.com/player.html?aid=388472614&bvid=BV11d4y1z7DA&cid=845268393&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>archives</title>
       <link href="/archives/index.html"/>
       <url>/archives/index.html</url>
@@ -67,11 +56,11 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="width:150px;height:150px;"><img src="https://s1.ax1x.com/2022/10/08/x8wkEq.png"></div><p>欸欸欸，你们看到ta了吗？<br>额，好像在上学呢，不在。<br>[doge]</p><h1 id="👻我？"><a href="#👻我？" class="headerlink" title="👻我？"></a>👻我？</h1><p>没错 就是我啦~<br>我只是一只小菜鸡~<br>哦不对，是个新手<psw>（学的很烂的纯新手）</psw></p><h2 id="📃基本资料"><a href="#📃基本资料" class="headerlink" title="📃基本资料"></a>📃基本资料</h2><p>🌈姓名：Potato🥔<br>🌈性别：♂<br>🌈生日：2002.08<br>🌈职业：学生👍<br>📬：the_somme@163.com | </p><h3 id="🤪技能："><a href="#🤪技能：" class="headerlink" title="🤪技能："></a>🤪技能：</h3><p>❌擅长PS、Pr、Ae、Au、Ai、Dw、An、Id等软件的安装与卸载🎃<br>❌精通Html、CSS、JavaScript、Vue、React、PHP、Java、Python、C、C++、C#、Go、TypeScript等单词的拼写🎲<br>❌熟悉Windows、Linux、Mac、Android、IOS等系统的开关机👻</p><p><br></br></p><div ><img src="https://s1.ax1x.com/2022/10/05/xlorB6.png"></div><hr></hr><p style="text-align: center;color: #CC3300;font-size:30px;"><psw>好了，再见，开摆！~</psw></p><iframe style="width:665px;height:374px;" src="//player.bilibili.com/player.html?aid=388472614&bvid=BV11d4y1z7DA&cid=845268393&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
       
     </entry>
     
@@ -100,6 +89,17 @@
     
     
     <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
@@ -111,9 +111,9 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>life</title>
+      <link href="/life/index.html"/>
+      <url>/life/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       
@@ -122,9 +122,9 @@
     
     
     <entry>
-      <title>life</title>
-      <link href="/life/index.html"/>
-      <url>/life/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       
