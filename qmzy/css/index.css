@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-size: 14px;
+    background: #fff;
+}
+/* 导航 */
+.nav {
+    width: 100%;
+    height: 55px;
+    background: rgba(255, 255, 255, 0);
+    position: fixed;
+    z-index: 10;
+}
+.nav .logo img{
+    width: 200px;
+    height: 55px;
+    float: left;
+}
+.nav .title {
+    float: right;
+    padding-right: 40px;
+}
+.nav .title ul li{
+    display: inline-block;
+    margin: 0 2px;
+    text-align: center;
+}
+.nav .title ul li a{ 
+    display: block;
+    text-decoration: none;
+    color: #276f95;
+    font-weight: bold;
+    font-size: 16px;
+    height: 55px;
+    line-height: 55px;
+    width: auto;
+    padding: 0 10px;
+}
+.nav .title ul li a:hover{
+    color: #5872d7;
+} 
+.nav .title ul li a img{
+    width: 30px;
+    height: 30px;
+    float: left;
+    top: 12px;
+    right: 2px;
+    position: relative;
+}
+.little_tool{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+.little_tool:hover{
+    animation-name: upup;
+	animation-duration: 2.5s;
+}
+@keyframes upup {
+    0% {
+    }  
+    100% {
+        bottom: 20px;
+        height: 650px;
+        /* padding-bottom: 500px; */
+    }
+}
+.little_tool img{
+    width: 50px;
+    height: 50px;
+} 
+
+/* 自动轮播图 */
+.autopic {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+.autopic ul {
+    padding: 0;
+    width: 9999px;
+    transition: all 0.5s;
+}
+.autopic li {
+    float: left;
+    width: 1900px;
+    height: 450px;
+}
+.autopic li img {
+    width: 100%;
+    height: 100%;
+}
+/*//自动播放*/
+.autopic .slide-auto {
+    animation: marginLeft 10.5s infinite;
+}
+
+@keyframes marginLeft {
+    0% {
+        margin-left: 0;
+    }
+
+    28.5% {
+        margin-left: 0;
+    }
+
+    33.3% {
+        margin-left: -1900px;
+    }
+
+    62% {
+        margin-left: -1900px;
+    }
+
+    66.7% {
+        margin-left: -3800px;
+    }
+
+    95.2% {
+        margin-left: -3800px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 150px;
+    background: rgb(31, 31, 31);
+    border-top: #fff 3px solid;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    padding:20px 0px;
+}
+
+
+
+
+/* 导航结束 */
+/* 横幅图片 */
+.banner{
+    width: 100%;
+    background: palevioletred;
+}
+.banner img{
+    width: 100%;
+    height: 496px;
+    display: block;
+}
+/* 横幅图片结束 */
+
+/* 内容 */
+.box {
+    width: 100%;
+    /* background: palevioletred; */
+    display: block;
+}
+.modtitle {
+    text-align: center;
+    padding: 30px 0;
+}
+.modtitle h2{
+    font-size: 30px;
+    color: #276f95;
+}
+
+/* 景色块 */
+.page {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    text-align: center;
+}
+.page ul li {
+    display: inline-block;
+    width: 280px;
+    height: 320px;
+    margin: 40px 13px;
+    /* border: solid 2px #aaa; */
+}
+.page ul li img{
+    width: 100%;
+    height: 280px;
+    display: block;
+    /* border-radius: 10px 10px; */
+}
+.page ul li a{
+    width: 100%;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background: #80CEDC;
+    text-decoration: none;
+    border-top: solid 2px #aaa;
+    /* border-radius: 10px 10px; */
+}
+.page ul li a:hover{
+    color: #e78181;
+    background: #2CADC4;
+}
+
+/* 指南 */
+.guide{
+    width: auto;
+    height: 400px;
+    background: #276f95;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.guide h2{
+    font-size: 30px;
+    color: #fff;
+    line-height: 45px;
+    padding-bottom: 20px;
+}
+.guide p{
+    font-size: 20px;
+    color: #fff;
+    line-height: 40px;
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+/* 首页美食块 */
+.food{
+    width: 100%;
+    height: auto;
+    /* background: paleturquoise; */
+    text-align: center;
+}
+.food ul {
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+.food ul li{
+    display: inline-block;
+    width: 320px;
+    height: 330px;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 10px 10px;
+}
+.food ul li img{
+    width: 320px;
+    height: 290px;
+    transition: all .4s;
+    display: block;
+    box-sizing: border-box;
+}
+.food ul li img:hover{
+    transform: scale(1.3,1.3);
+}
+
+.food ul li p{
+    width: 320px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background: #80CEDC;
+}
+.food a{
+    display: block;
+    width: 120px;
+    height: 50px;
+    background-color: #FF996A;
+    border-radius: 20px 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto;
+    line-height: 50px;
+}
+.food a:hover{
+    color: #ff0000;
+}
+/* 美图秀秀 */
+.pictures{
+   width: auto; 
+   padding-bottom: 50px;
+   background-color: rgb(238, 238, 238);
+}
+.pictures h2{
+    text-align: center;
+    font-size: 30px;
+    color: #276f95;
+    line-height: 70px;
+    height: 70px;
+    display: block;
+}
+.pictures ul {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    text-align: center;
+}
+.pictures ul li{
+    display: inline-block;
+    width: 220px;
+    height: 200px;
+    background: palegreen;
+    margin: 15px;
+    border: solid rgb(151, 151, 151) 2px;
+    overflow: hidden;
+    transition: all .4s;
+}
+.pictures ul li img{
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+}
+.pictures ul li:hover img{
+    transform: scale(1.05);
+}
+.pictures ul li:hover{
+    transform: rotate(-15deg)
+}
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/摄影照片.css">
+    <link rel="shortcut icon" href="./img/alllogo.png"/>
+    <title>摄影美图</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href=""><img src="./img/logo.png" alt=""></a>
+        </div>
+        <div class="title">
+            <ul>
+                <li><a href="index.html"><img src="./img/icon-home.png">首页</a></li>
+                <li><a href="概述.html"><img src="./img/icon-jieshao.png">概述</a></li>
+                <li><a href="景区介绍页.html"><img src="./img/icon-lvyou.png">景区介绍</a></li>
+                <li><a href="美食页.html"><img src="./img/icon-food.png">周边美食</a></li>
+                <li><a href="摄影照片页.html"><img src="./img/icon-sheying.png">摄影美图</a></li>
+                <!-- <li><a href="tupian.html"><img src="">关于我们</a></li> -->
+            </ul>
+        </div>
+    </div>
+    <!-- 侧边小工具 -->
+    <!-- <a class="little_tool" href=""><img src="./img/火箭.png"></a> -->
+
+    <section>
+        <img src="./img2/bg.jpg" id="bg">
+        <img src="./img2/moon.png" id="moon">
+        <img src="./img2/mountain.png" id="mountain">
+        <img src="./img2/road.png" id="road" road>
+        <h2 id="text">
+            摄 影 美 图
+        </h2>
+    </section>
+    <div >
+        <div class="container">
+            <div class="xxxxx">
+                <div class="box">
+                    <img src="./img2/苏州凉亭.jpg"">
+                        <span>凉亭</span>
+                    
+                </div>
+                
+                <div class=" box">
+                    <img src="./img2/苏州启园码头.jpg" alt="">
+                    <span>启园码头</span>
+                </div>
+
+
+                <div class="box">
+                    <img src="./img2/苏州香雪海.jpg" alt="">
+                    <span>香雪海</span>
+                </div>
+
+
+                <div class="box">
+                    <img src="./img2/苏州古镇.jpg" alt="">
+                    <span>古镇</span>
+                </div>
+
+                <div class="box">
+                    <img src="./img2/苏州天平山.jpg" alt="">
+                    <span>天平山</span>
+                </div>
+            </div>
+
+            <div class="xxxxx">
+                <div class="box">
+                    <img src="./img2/苏州 虎丘 剑池.jpg"">
+                    <span>虎丘 剑池</span>
+                </div>
+                
+                <div class=" box">
+                    <img src="./img2/夜景古镇.jpg" alt="">
+                    <span>夜景古镇</span>
+                </div>
+
+
+                <div class="box">
+                    <img src="./img2/苏州 博物馆.jpg" alt="">
+                    <span>博物馆</span>
+                </div>
+
+
+                <div class="box">
+                    <img src="./img2/苏州 宝塔.jpg" alt="">
+                    <span>宝塔</span>
+                </div>
+
+                <div class="box">
+                    <img src="./img2/苏州园林.jpg" alt="">
+                    <span>园林</span>
+                </div>
+            </div>
+
+            <div class="xxxxx">
+                <div class="box">
+                    <img src="./img2/拙政园.jpg">
+                    <span>拙政园</span>
+                </div>
+                
+                <div class=" box">
+                    <img src="./img2/寒山寺.jpg" alt="">
+                    <span>寒山寺</span>
+                </div>
+
+
+                <div class="box">
+                    <img src="./img2/沧浪亭.jpg" alt="">
+                    <span>沧浪亭</span>
+                </div>
+                <div class="box">
+                    <img src="./img2/启园.jpg" alt="">
+                    <span>启园</span>
+                </div>
+
+                <div class="box">
+                    <img src="./img2/太湖.jpg" alt="">
+                    <span>太湖</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>    /*调用js*/
+        window.addEventListener('scroll', () => {       /*作用是给浏览器窗口添加一个滚动事件，当用户在页面中滚动内容的时候，会触发该事件，并执行事件。可以对滚动进行一些特定的控制，
+                                                        例如：在滚动到指定位置时加载内容、实现页面滚动动画等等。scroll是一个字符串，表示的事件类型是滚动事件。箭头函数 () => 则代表了事件处理函数，
+                                                        指定了事件被触发时要执行的操作。这里的代码没有具体的函数体语句，要在函数体里编写具体的代码来实现滚动事件的监听和处理。*/
+            /*动态滚动特效，用于实现页面内容根据用户的滚动操作自动滑动、移动和变化。*/
+            var value = window.scrollY;                 /*获取浏览器窗口区域当前已经滚动的垂直距离（即滚动的位置），并将其赋值给变量value。*/
+            bg.style.top = value * 0.5 + 'px';          /*将页面中背景图的 top 属性设置成当前滚动距离的一半，实现背景图片带着页面滚动的效果。*/
+            moon.style.left = -value * 0.5 + 'px';      /*将页面中的月亮的 left 属性设置为当前滚动距离的一半的相反数，实现月亮随着页面滚动向相反的方向移动的效果。*/
+            mountain.style.top = -value * 0.15 + 'px';  /*将页面中的山脉的 top 属性设置为当前滚动距离的一定比例的相反数，实现山脉随着页面滚动向相反的方向以不同的速度移动的效果。*/
+            road.style.top = value * 0.15 + 'px';       /*将页面中道路的 top 属性设置为当前滚动距离的一定比例，实现道路随着页面滚动以不同的速度移动的效果。*/
+            text.style.top = value * 1 + 'px';          /*将页面中文字的 top 属性设置为当前滚动距离的一定比例，实现文字随着页面滚动向上或向下移动的效果。这里的比例为1，表示文字在滚动时与滚动的位置保持一致，即文字上下移动与滚动距离相同的速度。*/
+        })
+    </script>
+
+
+
+
+
+    <!-- <div class="footer">
+        <p>电话: 0351-6666678 传真: 0351-6666678 电子邮件: sxtyhkzyjsxy@123.edu.cn</p>
+        <br>
+        <p>地址: 山西省大同市云州区航苑路一号山西通用航空职业技术学院</p>
+        <br>
+        <p>Copyright © 2019 ©2021-2023山西通用航空职业技术学院. All Rights Reserved.</p>
+    </div> -->
+
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    /* -使用开启GPU硬件加速模式 */
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+body {
+    font-size: 14px;
+    background: #fff;
+}
+
+/* 导航 */
+.nav {
+    width: 100%;
+    height: 55px;
+    background: rgba(255, 255, 255, 0);
+    position: fixed;
+    z-index: 100;
+}
+
+.nav .logo img {
+    width: 200px;
+    height: 55px;
+    float: left;
+}
+
+.nav .title {
+    float: right;
+    padding-right: 40px;
+}
+
+.nav .title ul li {
+    display: inline-block;
+    margin: 0 2px;
+    text-align: center;
+}
+
+.nav .title ul li a {
+    display: block;
+    text-decoration: none;
+    color: #276f95;
+    font-weight: bold;
+    font-size: 16px;
+    height: 55px;
+    line-height: 55px;
+    width: auto;
+    padding: 0 10px;
+}
+
+.nav .title ul li a:hover {
+    color: #5872d7;
+}
+
+.nav .title ul li a img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    top: 12px;
+    right: 2px;
+    position: relative;
+}
+
+.little_tool {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+
+.little_tool:hover {
+    animation-name: upup;
+    animation-duration: 2.5s;
+}
+
+@keyframes upup {
+    0% {}
+
+    100% {
+        bottom: 20px;
+        height: 650px;
+        /* padding-bottom: 500px; */
+    }
+}
+
+.little_tool img {
+    width: 50px;
+    height: 50px;
+}
+
+/* 自动轮播图 */
+.autopic {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.autopic ul {
+    padding: 0;
+    width: 9999px;
+    transition: all 0.5s;
+}
+
+.autopic li {
+    float: left;
+    width: 1500px;
+    height: 450px;
+}
+
+.autopic li img {
+    width: 100%;
+    height: 100%;
+}
+
+/*//自动播放*/
+.autopic .slide-auto {
+    animation: marginLeft 10.5s infinite;
+}
+
+@keyframes marginLeft {
+    0% {
+        margin-left: 0;
+    }
+
+    28.5% {
+        margin-left: 0;
+    }
+
+    33.3% {
+        margin-left: -1500px;
+    }
+
+    62% {
+        margin-left: -1500px;
+    }
+
+    66.7% {
+        margin-left: -3000px;
+    }
+
+    95.2% {
+        margin-left: -3000px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background: rgb(31, 31, 31);
+    border-top: #fff 3px solid;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 20px 0px;
+}
+
+body {
+    background-color: #0a2a43;
+    min-height: 1500px;
+    /*设置元素的最小高度*/
+}
+
+section {
+    position: relative;
+    /*相对定位*/
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* 溢出隐藏 */
+    display: flex;
+    /*定义一个弹性盒子   主轴和交叉轴*/
+    justify-content: center;
+    /*主轴上的对齐方式居中*/
+    align-items: center;
+    /*在竖直方向上对齐方式居中*/
+}
+
+section:before {
+    /*伪元素在真正页面元素内部之前添加新内容*/
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    /*background: linear-gradient(to top #0a2a43 transparent);    线形渐变*/
+}
+
+section:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0a2a43;
+    z-index: 10000;
+    /*元素之间重叠的时候，z-index 较大的元素会覆盖较小的元素在上层进行显示。*/
+    mix-blend-mode: color;
+    /*元素的内容应该与元素的直系父元素的内容和元素的背景如何混合*/
+}
+
+section img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#text {
+    position: relative;
+    color: #ffffff;
+    font-size: 10em;
+    /*相对长度单位。如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸。*/
+    z-index: 1;
+}
+
+#road {
+    z-index: 2;
+}
+
+
+.container {
+    display: block;
+    /*block 生成一个块级元素盒*/
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    /*border-box 告诉浏览器：你想要设置的边框和内边距的值是包含在 height 内的。*/
+    height: 100vh;
+    /*height 减去 (border + padding) 的值*/
+}
+
+.xxxxx {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /*也可以应用于行内元素*/
+}
+
+.box {
+    flex: 1;
+    /*弹性项目如何增大或缩小以适应其弹性容器中可用的空间*/
+    overflow: hidden;
+    /* 溢出隐藏 */
+    transition: 0.5s;
+    /*不同状态之间切换的过渡效果*/
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    /* 阴影效果   x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影颜色 */
+}
+
+.box img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    /* calc()函数用于动态计算长度值  高度比100%的高度少10vh  1vh视口高度的1%*/
+    object-fit: cover;
+    /*适应到其使用高度和宽度确定的框。  cover被替换的内容在保持其宽高比的同时填充元素的整个内容框。*/
+    transition: 0.5s;
+    /* 一个元素在不同状态之间切换的时候定义不同的过渡效果*/
+}
+
+.box span {
+    font-size: 3vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.5;
+    /*行文本间距*/
+    font-family: tahoma;
+    /*无衬线字体*/
+    color: #ffffff;
+}
+
+.box:hover {
+    flex: 1 50%;
+    /*增大或缩小以适应其弹性容器中可用的空间*/
+}
+
+.box:hover img {
+    width: 100%;
+}

@@ -1,0 +1,623 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-size: 14px;
+    background: #fff;
+}
+/* 导航 */
+.nav {
+    width: 100%;
+    height: 55px;
+    background: rgba(255, 255, 255, 0);
+    position: fixed;
+    z-index: 10;
+}
+.nav .logo img{
+    width: 200px;
+    height: 55px;
+    float: left;
+}
+.nav .title {
+    float: right;
+    padding-right: 40px;
+}
+.nav .title ul li{
+    display: inline-block;
+    margin: 0 2px;
+    text-align: center;
+}
+.nav .title ul li a{ 
+    display: block;
+    text-decoration: none;
+    color: #276f95;
+    font-weight: bold;
+    font-size: 16px;
+    height: 55px;
+    line-height: 55px;
+    width: auto;
+    padding: 0 10px;
+}
+.nav .title ul li a:hover{
+    color: #5872d7;
+} 
+.nav .title ul li a img{
+    width: 30px;
+    height: 30px;
+    float: left;
+    top: 12px;
+    right: 2px;
+    position: relative;
+}
+.little_tool{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+.little_tool:hover{
+    animation-name: upup;
+	animation-duration: 2.5s;
+}
+@keyframes upup {
+    0% {
+    }  
+    100% {
+        bottom: 20px;
+        height: 650px;
+        /* padding-bottom: 500px; */
+    }
+}
+.little_tool img{
+    width: 50px;
+    height: 50px;
+} 
+
+/* 自动轮播图 */
+.autopic {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+.autopic ul {
+    padding: 0;
+    width: 9999px;
+    transition: all 0.5s;
+}
+.autopic li {
+    float: left;
+    width: 1500px;
+    height: 450px;
+}
+.autopic li img {
+    width: 100%;
+    height: 100%;
+}
+/*//自动播放*/
+.autopic .slide-auto {
+    animation: marginLeft 10.5s infinite;
+}
+
+@keyframes marginLeft {
+    0% {
+        margin-left: 0;
+    }
+
+    28.5% {
+        margin-left: 0;
+    }
+
+    33.3% {
+        margin-left: -1500px;
+    }
+
+    62% {
+        margin-left: -1500px;
+    }
+
+    66.7% {
+        margin-left: -3000px;
+    }
+
+    95.2% {
+        margin-left: -3000px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 150px;
+    background: rgb(31, 31, 31);
+    border-top: #fff 3px solid;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    padding:20px 0px;
+}
+
+
+/* bigin */
+.titlehot {
+    width: 180px;
+    height: 180px;
+    border: 1px solid #ccc;
+    margin: 100px auto;
+    position: fixed;
+    right: 10px;
+    top: 490px;
+    z-index: 10;
+}
+.titlehot h3 {
+    height: 32px;
+    border-bottom: 1px dotted #ccc;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    /* 由于该盒子带有一个下边框，所以缩进不能使用 margin，否则下边框也会一同缩进，
+    此处就用 padding。并且此处没有设置 width，所以 padding-left 也不会撑大盒子 */
+    padding-left: 15px;
+}
+.titlehot ul li{
+    font-size: 15px;
+    color: beige;
+    text-decoration: none;
+}
+.titlehot ul li a:hover {
+    text-decoration: underline;
+}
+.titlehot ul li {
+    height: 23px;
+    line-height: 23px;
+    padding-left: 20px;
+    list-style: none;
+}
+.titlehot ul {
+    margin-top: 7px;
+}
+.banner{
+    width: 100%;
+    height: 500px;
+}
+.banner img{
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto; 
+}
+.suzhou{
+    margin: 0 auto;
+    position: relative;
+    bottom: 450px;
+}
+.suzhou p{
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    font-family: "楷体";
+}
+.suzhou span{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "楷体";
+    position: relative;
+    left: 810px;
+}
+.jingdian{
+    margin: 0 auto;
+    width: 250px;
+    height: 100px;
+    position: relative;
+    right: 633px;
+    bottom: 225px;
+    background-color: rgba(44, 33, 58, 0.6);
+    box-shadow: 10px 10px rgba(177, 162, 162, 0.5);
+}
+.jingdian p{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-size: 60px;
+    font-family: "楷体";
+    color:white;
+}
+.tutu{
+    width: 100%;
+    height: 360px;
+    border-bottom: 1px solid #aaa;
+    padding-top: 100px;
+}
+.tutu img{
+    margin-left: 40px;
+    
+}
+.tuzi{
+    position: relative;
+    right: 560px;
+}
+.tuzi p{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-family: "隶书";
+}
+.tuzi1{
+    border: solid 1px black;
+    width: 888px;
+    height: 223px;
+    position: relative;
+    left: 870px;
+    bottom: 245px;
+}
+.tuzi1 p{
+    font-size: 27px;
+    color: black;
+    font-family: "隶书";
+    text-indent: 2em;
+}
+.shui{
+    width: 100%;
+    height: 830px;
+    border-bottom: 5px solid #aaa;
+}
+.shui .shui1{
+    width: 100px;
+    height: 185px;
+    position: relative;
+    left: 65px;
+    top: 300px;
+    background-color: rgba(124, 119, 119, 0.8);
+    border-radius: 30px;
+    border: solid 2px #aaa;
+}
+.shui  span{
+    font-size: 50px;
+    font-family: "方正舒体";
+    color: white;
+    position: relative;
+    top: 18px;
+    left: 20px;
+}
+.shui  .shui1 p{
+    font-size: 80px;
+    font-family: "方正舒体";
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 20px;
+}
+.shui .shui2{
+    background-color: #ff8500;
+    width: 630px;
+    height:350px;
+    position: relative;
+    left: 317px;
+    bottom: 120px;
+}
+.shui .shui2 img{
+    text-align: center;
+    width: 630px;
+    height:350px;
+}
+.shui .shui2 p{
+    font-size: 30px;
+    font-family: "方正舒体";
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(124, 119, 119, 0);
+    width: 120px;
+    height: 37px;
+    border: solid 2px rgba(255, 255, 255, 0.75);
+    position: relative;
+    bottom: 48px;
+    left: 503px;
+}
+.shui .shui3{
+    background-color: #ff8500;
+    width: 630px;
+    height:350px;
+    position: relative;
+    left: 950px;
+    bottom: 470px;
+}
+.shui .shui3 img{
+    text-align: center;
+    width: 630px;
+    height:350px;
+}
+.shui .shui3 p{
+    font-size: 30px;
+    font-family: "方正舒体";
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(124, 119, 119, 0);
+    width: 120px;
+    height: 37px;
+    border: solid 2px rgba(255, 255, 255, 0.75);
+    position: relative;
+    bottom: 48px;
+    left: 3px;
+} 
+.shui .shui4{
+    background-color: #ff8500;
+    width: 630px;
+    height:350px;
+    position: relative;
+    left: 317px;
+    bottom: 468px;
+}
+.shui .shui4 img{
+    text-align: center;
+    width: 630px;
+    height:350px;
+}
+.shui .shui4 p{
+    font-size: 30px;
+    font-family: "方正舒体";
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(124, 119, 119, 0);
+    width: 120px;
+    height: 37px;
+    border: solid 2px rgba(255, 255, 255, 0.75);
+    position: relative;
+    bottom: 351px;
+    left: 503px;
+} 
+.shui .shui5{
+    background-color: #ff8500;
+    width: 630px;
+    height:350px;
+    position: relative;
+    left: 950px;
+    bottom: 818px;
+}
+.shui .shui5 img{
+    text-align: center;
+    width: 630px;
+    height:350px;
+}
+.shui .shui5 p{
+    font-size: 30px;
+    font-family: "方正舒体";
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(124, 119, 119, 0);
+    width: 120px;
+    height: 37px;
+    border: solid 2px rgba(255, 255, 255, 0.75);
+    position: relative;
+    bottom: 351px;
+    left: 3px;
+} 
+.shan{
+    width: 100%;
+    height: 965px;
+    border-bottom: 5px solid #aaa;
+} 
+.shan .shan1{
+    width: 100px;
+    height: 185px;
+    position: relative;
+    left: 65px;
+    top: 270px;
+    background-color: rgba(124, 119, 119, 0.8);
+    border-radius: 30px;
+    border: solid 2px #aaa;
+}
+.shan  span{
+    font-size: 39px;
+    font-family: "方正舒体";
+    color: white;
+    position: relative;
+    top: 22px;
+    left: 9px;
+}
+.shan  .shan1 p{
+    font-size: 87px;
+    font-family: "方正舒体";
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 25px;
+    left: -4px;
+}
+.shan .shan2{
+    background-color: #ff8500;
+    width: 1267px;
+    height:450px;
+    position: relative;
+    left: 314px;
+    bottom: 162px;
+}
+.shan .shan2 img{
+    text-align: center;
+    width: 1267px;
+    height:450px;
+}
+.shan .shan2 p{
+    font-size: 50px;
+    font-family: "隶书";
+    color: rgba(0, 0, 0, 0.5);
+    align-self: center;
+    position: relative;
+    bottom: 463px;
+    left: 8px;
+    text-shadow: -10px 10px rgba(255, 255, 255, 0.15);
+    background-color: rgba(124, 119, 119, 0);
+    width: 54px;
+    height: 176px;
+    border: solid 2px rgba(255, 255, 255, 0);
+}
+.shan .shan3{
+    background-color: #ff8500;
+    width: 632px;
+    height:395px;
+    position: relative;
+    left: 314px;
+    bottom: 159px;
+}
+.shan .shan3 img{
+    text-align: center;
+    width: 632px;
+    height:395px;
+}
+.shan .shan3 p{
+    font-size: 35px;
+    font-family: "隶书";
+    color: rgba(255, 255, 255, 0.95);
+    align-self: center;
+    position: relative;
+    bottom: 404px;
+    left: 12px;
+    text-shadow: -10px 10px rgba(255, 255, 255, 0.46);
+    background-color: rgba(124, 119, 119, 0);
+    width: 54px;
+    height: 176px;
+    border: solid 2px rgba(255, 255, 255, 0);
+}
+.shan .shan4{
+    background-color: #ff8500;
+    width: 632px;
+    height:395px;
+    position: relative;
+    left: 949px;
+    bottom: 554px;
+}
+.shan .shan4 img{
+    text-align: center;
+    width: 632px;
+    height:395px;
+}
+.shan .shan4 p{
+    font-size: 35px;
+    font-family: "隶书";
+    color: rgba(255, 255, 255, 0.9);
+    align-self: center;
+    position: relative;
+    bottom: 404px;
+    left: 12px;
+    text-shadow: -10px 10px rgba(255, 255, 255, 0.46);
+    background-color: rgba(124, 119, 119, 0);
+    width: 54px;
+    height: 176px;
+    border: solid 2px rgba(255, 255, 255, 0);
+}
+.yuanlin{
+    width: 100%;
+    height: 1575px;
+    border-bottom: 5px solid #aaa;
+} 
+.yuanlin .lin1{
+    width: 215px;
+    height: 175px;
+    position: relative;
+    left: 60px;
+    top: 340px;
+    border-radius: 30px;
+    background-color: rgba(124, 119, 119, 0.8);
+    border: solid 2px #aaa;
+}
+.yuanlin span{
+    font-size: 40px;
+    font-family: "方正舒体";
+    color: white;
+    position: relative;
+    top: 22px;
+    left: 34px;
+}
+.yuanlin .lin1 p{
+    font-size: 87px;
+    font-family: "方正舒体";
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 25px;
+    left: -4px;
+}
+.yuanlin .lin2{
+    background-color: #ff8500;
+    width: 1150px;
+    height:450px;
+    position: relative;
+    left: 373px;
+    bottom: 108px;
+}
+.yuanlin .lin2 img{
+    text-align: center;
+    width: 1150px;
+    height:450px;
+}
+.yuanlin .lin2 p{
+    font-size: 50px;
+    font-family: "隶书";
+    color: rgba(0, 0, 0, 0.6);
+    align-self: center;
+    position: relative;
+    bottom: 490px;
+    left: 494px;
+    text-shadow: -10px 10px rgba(255, 255, 255, 0.46);
+    width: 153px;
+    height: 67px;
+    border: solid 2px rgba(255, 255, 255, 0);
+}
+.yuanlin .lin3{
+    background-color: #ff8500;
+    width: 1150px;
+    height:32px;
+    position: relative;
+    left: 373px;
+    bottom: 45px;
+}
+.yuanlin .lin3 img{
+    text-align: center;
+    width: 1150px;
+    height:450px;
+}
+.yuanlin .lin3 p{
+    font-size: 50px;
+    font-family: "隶书";
+    color: rgba(0, 0, 0, 0.6);
+    align-self: center;
+    position: relative;
+    bottom: 490px;
+    left: 494px;
+    text-shadow: -10px 10px rgba(255, 255, 255, 0.46);
+    width: 153px;
+    height: 67px;
+    border: solid 2px rgba(255, 255, 255, 0);
+}
+.yuanlin .lin4{
+    background-color: #ff8500;
+    width: 1150px;
+    height:450px;
+    position: relative;
+    left: 373px;
+    bottom: -435px;
+}
+.yuanlin .lin4 img{
+    text-align: center;
+   width: 1150px;
+    height:450px;
+}
+.yuanlin .lin4 p{
+    font-size: 50px;
+    font-family: "隶书";
+    color: rgba(0, 0, 0, 0.6);
+    align-self: center;
+    position: relative;
+    bottom: 490px;
+    left: 494px;
+    text-shadow: -10px 10px rgba(255, 255, 255, 0.46);
+    width: 153px;
+    height: 67px;
+    border: solid 2px rgba(255, 255, 255, 0);
+}

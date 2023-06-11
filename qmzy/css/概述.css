@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-size: 14px;
+    background: #fff;
+}
+/* 导航 */
+.nav {
+    width: 100%;
+    height: 55px;
+    background: rgba(255, 255, 255, 0);
+    position: fixed;
+    z-index: 10;
+}
+.nav .logo img{
+    width: 200px;
+    height: 55px;
+    float: left;
+}
+.nav .title {
+    float: right;
+    padding-right: 40px;
+}
+.nav .title ul li{
+    display: inline-block;
+    margin: 0 2px;
+    text-align: center;
+}
+.nav .title ul li a{ 
+    display: block;
+    text-decoration: none;
+    color: #276f95;
+    font-weight: bold;
+    font-size: 16px;
+    height: 55px;
+    line-height: 55px;
+    width: auto;
+    padding: 0 10px;
+}
+.nav .title ul li a:hover{
+    color: #5872d7;
+} 
+.nav .title ul li a img{
+    width: 30px;
+    height: 30px;
+    float: left;
+    top: 12px;
+    right: 2px;
+    position: relative;
+}
+.little_tool{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+.little_tool:hover{
+    animation-name: upup;
+	animation-duration: 2.5s;
+}
+@keyframes upup {
+    0% {
+    }  
+    100% {
+        height: 650px;
+        /* padding-bottom: 500px; */
+    }
+}
+.little_tool img{
+    width: 50px;
+    height: 50px;
+} 
+
+/* 自动轮播图 */
+.autopic {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+.autopic ul {
+    padding: 0;
+    width: 9999px;
+    transition: all 0.5s;
+}
+.autopic li {
+    float: left;
+    width: 1500px;
+    height: 450px;
+}
+.autopic li img {
+    width: 100%;
+    height: 100%;
+}
+/*//自动播放*/
+.autopic .slide-auto {
+    animation: marginLeft 10.5s infinite;
+}
+
+@keyframes marginLeft {
+    0% {
+        margin-left: 0;
+    }
+
+    28.5% {
+        margin-left: 0;
+    }
+
+    33.3% {
+        margin-left: -1500px;
+    }
+
+    62% {
+        margin-left: -1500px;
+    }
+
+    66.7% {
+        margin-left: -3000px;
+    }
+
+    95.2% {
+        margin-left: -3000px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 150px;
+    background: rgb(31, 31, 31);
+    border-top: #fff 3px solid;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    padding:20px 0px;
+}
+
+
+.banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.main {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.introduction_title{
+    /* background: palegreen; */
+    width: auto;
+    height: 35px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #276f95;
+    /* line-height: 35px; */
+    padding-left: 20px;
+    border-left: #276f95 6px solid;
+    margin-top: 10px;
+}
+.introduction{
+    width: 100%;
+    height: 360px;
+    padding-top: 20px;
+}
+.introduction img{
+    width: 440px;
+    height: 300px;
+    float: right;
+    border-radius: 20px 20px;
+}
+.introduction p{
+    width: 700px;
+    font-size: 16px;
+    line-height: 32px;
+    text-indent: 2em;
+}
+
+.history{
+    width: 100%;
+    height: 540px;
+    padding-top: 20px;
+}
+.history .pic {
+    width: 450px;
+    height:500px;
+    float: right;
+    padding-top: 15px;
+}
+.history .pic img{
+    width: 400px;
+    height: 230px;
+    float: right;
+    border-radius: 20px 20px;
+    margin-bottom: 20px;
+}
+.history p{
+    width: 700px;
+    font-size: 16px;
+    line-height: 32px;
+    text-indent: 2em;
+}
+
+.dili{
+    width: 100%;
+    height: 400px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.dili img ,.map{
+    width: 320px;
+    height: 230px;
+    border-radius: 20px 20px;
+    display: inline-block;
+    margin: 10px;
+    overflow: hidden;
+}
+.dili img:nth-last-child(1){
+    width: 500px;
+    height: 350px;
+    border-radius: 0;
+    display: inline-block;
+    margin: 10px;
+    overflow: hidden;
+    transition: all 2s;
+    position: relative;
+    left: -100px;
+    top: -60px;
+}
+.dili img:nth-last-child(1):hover{
+    transform: scale(1.5);}
+.dili p{
+    margin: 0 auto;
+    width: 900px;
+    font-size: 16px;
+    line-height: 32px;
+    text-indent: 2em;
+}
+
